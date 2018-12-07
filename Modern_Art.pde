@@ -1,25 +1,33 @@
-//add modern art code here
-size(700, 700);
-strokeWeight(3);
-rect(100, 100, 500, 500);
+void setup() {
+  size(400, 400);
+  noFill();
+  strokeWeight(.5);
+  //Shows cursor position
+  fill(0);
+  textSize(18);
+  text("("+mouseX+","+mouseY+")", mouseX, mouseY);
+}
+void draw() {
+  stroke(random(200));
+  noFill();
+  ellipse(200, 200, 300, 300);
+  ellipse(253, 253, random(150, 200), random(150, 200));
+  ellipse(253, 147, random(150, 200), random(150, 200));
+  ellipse(147, 253, random(150, 200), random(150, 200));
+  ellipse(147, 147, random(150, 200), random(150, 200));
+  ellipse(275, 200, random(150, 200), random(150, 200));
+  ellipse(200, 275, random(150, 200), random(150, 200));
+  ellipse(125, 200, random(150, 200), random(150, 200));
+  ellipse(200, 125, random(150, 200), random(150, 200));
+  ellipse(230, 270, random(150, 200), random(150, 200));
+  ellipse(270, 230, random(150, 200), random(150, 200));
+  ellipse(170, 270, random(150, 200), random(150, 200));
+  ellipse(270, 170, random(150, 200), random(150, 200));
+  ellipse(130, 225, random(150, 200), random(150, 200));
+  ellipse(225, 130, random(150, 200), random(150, 200));
+  ellipse(175, 130, random(150, 200), random(150, 200));
+  ellipse(130, 170, random(150, 200), random(150, 200));
 
-//Lines
-line(100, 450, 500, 450);
-line(550, 200, 550, 450);
-line(200, 200, 600, 200);
-line(150, 200, 600, 200);
 
-//Rectangles
-fill(186, 38, 122);
-rect(100, 100, 200, 250);
-rect(100, 400, 400, 200);
-fill(122, 81, 104);
-rect(300, 100, 300, 100);
-rect(350, 350, 250, 250);
-fill(246, 123, 193);
-rect(550, 200, 50, 150);
-rect(250, 250, 250, 200);
-rect(100, 100, 100, 400);
-fill(255, 255, 255);
-rect(100, 500, 100, 100);
-rect(300, 450, 100, 150);
+  
+}
